@@ -6,6 +6,9 @@ class NegociacoesView{
         this._elemento = document.querySelector(seletor);
     }
 
+    update():void{
+        this._elemento.innerHTML = this.template();
+    }
     template():string{
         return `
         <table class="table table-hover table-bordered">

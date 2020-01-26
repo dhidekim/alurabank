@@ -2,6 +2,9 @@ class NegociacoesView {
     constructor(seletor) {
         this._elemento = document.querySelector(seletor);
     }
+    update() {
+        this._elemento.innerHTML = this.template();
+    }
     template() {
         return `
         <table class="table table-hover table-bordered">
